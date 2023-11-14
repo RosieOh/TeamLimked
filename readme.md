@@ -1,8 +1,8 @@
-# SpringFramework Side Project : TeamLimked Company Web Site
+# SpringFramework Boiler Plate
 
 ## Introduction
 
-This project is an # SpringFramework Side Project using SpringFramework. This repository is Copyrighted by Rosie Oh.
+This project is an example implementing web using SpringFramework. This repository is open-sourced and anyone is welcome to contribute.
 
 ## Getting Started
 
@@ -16,7 +16,7 @@ This project is an # SpringFramework Side Project using SpringFramework. This re
 1. Clone the repository
 
     ```bash
-    git clone https://github.com/RosieOh/TeamLimked_Company_page.git
+    git clone https://github.com/RosieOh/SpringFrameWork_boilerplate.git
     ```
 
 2. Install Maven Dependencies
@@ -31,7 +31,6 @@ This project is an # SpringFramework Side Project using SpringFramework. This re
 -   Notice
 -   Board
 -   Member
--   Add to ETC...
 
 ## Tech Stack & Version
 
