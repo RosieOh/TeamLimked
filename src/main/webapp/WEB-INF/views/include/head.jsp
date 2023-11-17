@@ -1,0 +1,27 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" isELIgnored="false"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"  %>
+<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
+<%@ taglib prefix="fn" uri = "http://java.sun.com/jsp/jstl/functions"%>
+<c:set var="path1" value="${pageContext.servletContext.contextPath }" />
+
+<script type="text/javascript" src="https://openapi.map.naver.com/openapi/v3/maps.js?clientId=YOUR_CLIENT_ID"></script>
+
+<!-- Favicons -->
+<link href="${path1}/resources/assets/img/logo_1.png" rel="icon">
+<link href="${path1}/resources/assets/img/logo_1.png" rel="apple-touch-icon">
+
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+<!-- Vendor CSS Files -->
+<link href="${path1}/resources/assets/vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+<link href="${path1}/resources/assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+<link href="${path1}/resources/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<link href="${path1}/resources/assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+<link href="${path1}/resources/assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+<link href="${path1}/resources/assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+<link href="${path1}/resources/assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+<link href="${path1}/resources/assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+<!-- Template Main CSS File -->
+<link href="${path1}/resources/assets/css/style.css" rel="stylesheet">

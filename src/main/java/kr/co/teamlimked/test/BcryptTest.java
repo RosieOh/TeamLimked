@@ -1,4 +1,4 @@
-package kr.co.teamlimked;
+package kr.co.teamlimked.test;
 
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 
