@@ -12,11 +12,11 @@ import java.util.ArrayList;
 import java.util.List;
 
 @Repository
-public class FileDAOImpl implements FileDAO{
+public class FileDAOImpl implements FileDAO {
     @Autowired
     SqlSession sqlSession;
 
-    // 파일 자료실과 파일 테이블에 동시에 트랜잭션 처리 : 파일 자료 하나 당 파일은 여러개로 삽입
+    //파일 자료실과 파일 테이블에 동시에 트랜잭션 처리 : 파일 자료 하나당 파일은 여러 개이므로
     @Transactional
     @Override
     public void insertFileboard(FileVO fileboard) throws Exception {
@@ -30,12 +30,12 @@ public class FileDAOImpl implements FileDAO{
         }
     }
 
-    // 파일 자료 리스트 업
+    //파일 자료 목록 불러오기
     @Override
     public List<FileVO> getFileList() throws Exception {
         List<FileVO> fileboardList = new ArrayList<>();
         List<FileBoard> boardList = sqlSession.selectList("fileboard.fileboardList");
-        for(int i=0; i<boardList.size(); i++) {
+        for(int i=0;i<boardList.size();i++) {
             FileBoard board = boardList.get(i);
             List<FileDTO> fileList = sqlSession.selectList("fileboard.fileList", board.getPostNo());
             FileVO fileboard = new FileVO();
@@ -46,7 +46,7 @@ public class FileDAOImpl implements FileDAO{
         return fileboardList;
     }
 
-    // 해당 파일 자료
+    //해당 파일 자료
     @Transactional
     @Override
     public List<FileDTO> getFileGroupList(int postNo) throws Exception {
@@ -66,7 +66,6 @@ public class FileDAOImpl implements FileDAO{
         return fileboard;
     }
 
-    // 파일 객체벌 불러오기
     @Override
     public FileVO getFileObject(int no) throws Exception {
         return null;

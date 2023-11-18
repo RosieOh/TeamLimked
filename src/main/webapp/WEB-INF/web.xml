@@ -2,7 +2,7 @@
 <web-app version="2.5" xmlns="http://java.sun.com/xml/ns/javaee"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://java.sun.com/xml/ns/javaee https://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
-  <display-name>SpringFramework_boilerplate Web Application</display-name>
+  <display-name>TeamLimked Web Application</display-name>
 
   <!-- 빈 설정 파일 등록 : applicationContext.xml 지정 -->
   <context-param>
@@ -30,6 +30,8 @@
     <load-on-startup>1</load-on-startup>
   </servlet>
 
+
+
   <servlet-mapping>
     <servlet-name>appServlet</servlet-name>
     <url-pattern>/</url-pattern>
@@ -49,3 +51,4 @@
     <url-pattern>/*</url-pattern>
   </filter-mapping>
 </web-app>
+

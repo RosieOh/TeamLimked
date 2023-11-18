@@ -9,12 +9,12 @@ import org.springframework.stereotype.Service;
 import java.util.List;
 
 @Service
-public class MemberServiceImpl implements MemberService{
+public class MemberServiceImpl implements MemberService {
 
     @Autowired
     private MemberDAO memberDAO;
-    BCryptPasswordEncoder pwEncoder = new BCryptPasswordEncoder();
 
+    BCryptPasswordEncoder pwEncoder = new BCryptPasswordEncoder();
 
     @Override
     public List<Member> memberList() throws Exception {
@@ -46,35 +46,29 @@ public class MemberServiceImpl implements MemberService{
         memberDAO.memberDelete(id);
     }
 
+    //로그인을 컨트롤러에서 처리
     @Override
     public Member signIn(String id) throws Exception {
         return memberDAO.signIn(id);
     }
 
+    //서비스에서 로그인 처리
     @Override
     public boolean loginCheck(String id, String pw) throws Exception {
+        boolean comp = false;
         Member member = memberDAO.loginCheck(id);
-
-        if (member != null) {
-            boolean loginSuccess = pwEncoder.matches(pw, member.getPw());
-            return loginSuccess;
+        boolean loginSuccess = pwEncoder.matches(pw, member.getPw());
+        if(member!=null && loginSuccess){
+            comp = true;
         } else {
-            return false;
+            comp = false;
         }
+        return comp;
     }
 
+    //Ajax로 로그인 처리 -> 컨트롤러
     @Override
-    public Member login(String id) throws Exception {
-        return memberDAO.login(id);
-    }
-
-    @Override
-    public String findByEmail(String email) throws Exception {
-        return memberDAO.findIdByEmail(email);
-    }
-
-    @Override
-    public String findPassword(String id, String email) throws Exception {
-        return memberDAO.findPassword(id, email);
+    public Member loginAjax(Member member) throws Exception {
+        return memberDAO.loginAjax(member);
     }
 }

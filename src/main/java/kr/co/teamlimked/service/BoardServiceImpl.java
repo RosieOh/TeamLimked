@@ -1,13 +1,11 @@
 package kr.co.teamlimked.service;
+import java.util.List;
 
-import kr.co.teamlimked.dao.BoardDAO;
-import kr.co.teamlimked.dto.Board;
-import kr.co.teamlimked.dto.BoardComment;
-import kr.co.teamlimked.util.Page;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import java.util.List;
+import kr.co.teamlimked.dao.BoardDAO;
+import kr.co.teamlimked.dto.Board;
 
 @Service
 public class BoardServiceImpl implements BoardService {
@@ -16,13 +14,13 @@ public class BoardServiceImpl implements BoardService {
     private BoardDAO boardDAO;
 
     @Override
-    public List<Board> boardList(Page page) throws Exception {
-        return boardDAO.boardList(page);
+    public List<Board> boardList() throws Exception {
+        return boardDAO.boardList();
     }
 
     @Override
-    public Board boardDetail(int bno) throws Exception {
-        return boardDAO.boardDetail(bno);
+    public Board boardDetail(int seq) throws Exception {
+        return boardDAO.boardDetail(seq);
     }
 
     @Override
@@ -31,47 +29,12 @@ public class BoardServiceImpl implements BoardService {
     }
 
     @Override
-    public void boardDelete(int bno) throws Exception {
-        boardDAO.boardDelete(bno);
+    public void boardDelete(int seq) throws Exception {
+        boardDAO.boardDelete(seq);
     }
 
     @Override
     public void boardEdit(Board dto) throws Exception {
         boardDAO.boardEdit(dto);
-    }
-
-    @Override
-    public int totalCount(Page page) throws Exception {
-        return boardDAO.totalCount(page);
-    }
-
-    @Override
-    public List<BoardComment> boardCommentList(int bno) throws Exception {
-        return boardDAO.boardCommentList(bno);
-    }
-
-    @Override
-    public void commentInsert(BoardComment dto) throws Exception {
-        boardDAO.commentInsert(dto);
-    }
-
-    @Override
-    public void commentDelete(int cno) throws Exception {
-        boardDAO.commentDelete(cno);
-    }
-
-    @Override
-    public List<Board> selectComment() throws Exception {
-        return boardDAO.selectComment();
-    }
-
-    @Override
-    public List<Board> countComment() throws Exception {
-        return boardDAO.commentCount();
-    }
-
-    @Override
-    public List<Board> newBoard() throws Exception {
-        return boardDAO.newBoard();
     }
 }
