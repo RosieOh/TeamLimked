@@ -1,43 +1,25 @@
-# SpringFramework Boiler Plate
+## 🔥TeamLimked Company Page
 
-## Introduction
+|                   오태훈                  |                                                       
+|:--------------------------------------:|
+|                                        | 
+| [@RosieOh](https://github.com/rosieoh) |
 
-This project is an example implementing web using SpringFramework. This repository is open-sourced and anyone is welcome to contribute.
+## 💡 Commit Convention
 
-## Getting Started
-
-### Prerequisites
-
--   SpringFramework 5.3.20
--   Maven
-
-### Installation
-
-1. Clone the repository
-
-    ```bash
-    git clone https://github.com/RosieOh/SpringFrameWork_boilerplate.git
-    ```
-
-2. Install Maven Dependencies
-
-
-
-3. Run the development server
-
-## Features
-
--   Free
--   Notice
--   Board
--   Member
-
-## Tech Stack & Version
-
--   SpringFramework 5.3.20
--   Jsp/Servlet
--   MariaDB 8.0
-
-## License / 라이센스
-
-This project is under the MIT License. / 이 프로젝트는 MIT 라이센스를 따릅니다.
+|       Tags       |               Explanation               |
+| :--------------: | :-------------------------------------: |
+|       Feat       |            새로운 기능 추가             |
+|       Fix        |                버그 수정                |
+| !BREAKING CHANGE |         커다란 API 변경의 경우          |
+|     !HOTFIX      |          급한 치명적 버그 수정          |
+|      Build       |           빌드 관련 파일 수정           |
+|      Design      |        CSS를 포함 UI 디자인 변경        |
+|       Docs       |                문서 수정                |
+|      Style       | 코드 포맷팅, 세미콜론 누락, 코드 변경 X |
+|     Refactor     |              코드 리팩토링              |
+|     Comment      |        필요한 주석 추가 및 변경         |
+|       Test       |            테스트 코드 수정             |
+|      Rename      |         파일, 폴더명 이름 수정          |
+|      Remove      |             파일, 폴더 삭제             |
+|      chore       |            빌드, 패키지 수정            |
