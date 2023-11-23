@@ -23,9 +23,6 @@
     <resources mapping="/qna/**" location="/WEB-INF/views/qna" />
     <resources mapping="/reservation/**" location="/WEB-INF/views/reservation" />
     <resources mapping="/util/**" location="/WEB-INF/views/util" />
-    <resources mapping="/sample/**" location="/WEB-INF/views/sample" />
-    <resources mapping="/sample2/**" location="/WEB-INF/views/sample2" />
-    <resources mapping="/test/**" location="/WEB-INF/views/test" />
     <resources mapping="/error/**" location="/WEB-INF/views/error" />
 
     <!-- 컨트롤러에서 던진 URL : /notice/noticeList -->

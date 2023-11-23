@@ -42,8 +42,6 @@
         </bean>
 
         <context:annotation-config />
-        <bean id="sampleService" class="kr.co.teamlimked.service.SampleServiceImpl"/>
-        <bean id="sampleDAO" class="kr.co.teamlimked.dao.SampleDAOImpl"/>
         <bean id="boardService" class="kr.co.teamlimked.service.BoardServiceImpl"/>
         <bean id="boardDAO" class="kr.co.teamlimked.dao.BoardDAOImpl"/>
         <bean id="memberService" class="kr.co.teamlimked.service.MemberServiceImpl"/>
