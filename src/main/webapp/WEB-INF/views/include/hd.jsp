@@ -20,7 +20,7 @@
                 </button>
             </div>
 
-            <div class="navbar-menu" id="navigation">
+            <div class="navbar-menu" id="navigation" style="padding-left: 100px;">
                 <ul class="navbar-start ml-auto">
                     <li class="navbar-item">
                         <a class="navbar-link" href="index.html">Home</a>
@@ -45,7 +45,7 @@
                     </li>
 
                     <li class="navbar-item">
-                        <a class="navbar-link" href="contact.html">Contact</a>
+                        <a class="navbar-link" href="${path0}/contact.do">Contact</a>
                     </li>
                 </ul>
             </div>
