@@ -12,13 +12,7 @@ public class HomeController {
     //http:localhost:8081/pro03_war => / => /WEB-INF/views/index.jsp
 
     @RequestMapping("/")
-    public String home(Locale locale, Model model) {
-        Date date = new Date();
-        DateFormat dateFormat = DateFormat.getDateTimeInstance(DateFormat.LONG,
-                DateFormat.LONG, locale);
-        String today = dateFormat.format(date);
-        model.addAttribute("today", today);
-        model.addAttribute("myName", "김기태");
+    public String home(Model model) {
         return "/index";
     }
 }

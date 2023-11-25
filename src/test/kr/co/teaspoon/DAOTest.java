@@ -1,5 +1,6 @@
 package kr.co.teamlimked;
 
+import kr.co.teamlimked.dto.Sample;
 import org.apache.ibatis.session.SqlSession;
 import org.junit.Test;
 import org.junit.runner.RunWith;

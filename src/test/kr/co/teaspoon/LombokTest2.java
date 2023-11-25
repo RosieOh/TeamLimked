@@ -1,5 +1,6 @@
 package kr.co.teamlimked;
 
+import kr.co.teamlimked.dto.Sample;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.junit.*;
