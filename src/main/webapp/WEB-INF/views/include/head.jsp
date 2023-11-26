@@ -41,6 +41,8 @@
 <!-- Google Map -->
 <script src="${path1}/resources/plugins/google-map/map.js"></script>
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAkeLMlsiwzp6b3Gnaxd86lvakimwGA6UA&callback=initMap"></script>
+<script type="text/javascript" src="${path1}/resources/ckeditor/ckeditor.js"></script>
+<script src="https://cdn.ckeditor.com/4.20.0/standard/ckeditor.js"></script>
 
 <script src="${path1}/resources/js/script.js"></script>
 
