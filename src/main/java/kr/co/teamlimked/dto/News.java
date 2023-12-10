@@ -5,10 +5,11 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 @Data
-@NoArgsConstructor
 @AllArgsConstructor
-public class Simple3 {
-    private int no;
-    private String name;
-    private Score score3;
+@NoArgsConstructor
+public class News {
+    private String title;
+    private String content;
+    private String img;
+    private String href;
 }
