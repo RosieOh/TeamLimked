@@ -48,8 +48,6 @@
         <bean id="memberDAO" class="kr.co.teamlimked.dao.MemberDAOImpl"/>
         <bean id="freeService" class="kr.co.teamlimked.service.FreeServiceImpl"/>
         <bean id="freeDAO" class="kr.co.teamlimked.dao.FreeDAOImpl"/>
-        <bean id="guestBookService" class="kr.co.teamlimked.service.GuestBookServiceImpl"/>
-        <bean id="guestBookDAO" class="kr.co.teamlimked.dao.GuestBookDAOImpl"/>
         <bean id="fileService" class="kr.co.teamlimked.service.FileServiceImpl"/>
         <bean id="fileDAO" class="kr.co.teamlimked.dao.FileDAOImpl"/>
 
