@@ -13,7 +13,7 @@
     <!-- mobile responsive meta -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <title>티스푼 메인 페이지</title>
+    <title>팀림크드 메인 페이지</title>
     <jsp:include page="../include/head.jsp" />
 </head>
 <body>
