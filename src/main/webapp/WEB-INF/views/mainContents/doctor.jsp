@@ -13,7 +13,7 @@
         <div class="row">
             <div class="col-lg-6">
                 <div class="member d-flex align-items-start">
-                    <div class="pic"><img src="assets/img/1-1.jpg" class="img-fluid" alt=""></div>
+                    <div class="pic"><img src="${path1}/resources/assets/img/1-1.jpg" class="img-fluid" alt=""></div>
                     <div class="member-info">
                         <h4>오태훈</h4>
                         <span>Team Leader, Full-Stack Developer</span>
@@ -29,7 +29,7 @@
 
             <div class="col-lg-6 mt-4 mt-lg-0">
                 <div class="member d-flex align-items-start">
-                    <div class="pic"><img src="assets/img/2-2.jpg" class="img-fluid" alt=""></div>
+                    <div class="pic"><img src="${path1}/resources/assets/img/2-2.jpg" class="img-fluid" alt=""></div>
                     <div class="member-info">
                         <h4>김태균</h4>
                         <span>Strategy and Management Planner</span>
@@ -44,7 +44,7 @@
             </div>
             <div class="col-lg-6 mt-4">
                 <div class="member d-flex align-items-start">
-                    <div class="pic"><img src="assets/img/3-3.jpg" class="img-fluid" alt=""></div>
+                    <div class="pic"><img src="${path1}/resources/assets/img/3-3.jpg" class="img-fluid" alt=""></div>
                     <div class="member-info">
                         <h4>임장현</h4>
                         <span>Data Engineer</span>
@@ -59,7 +59,7 @@
             </div>
             <div class="col-lg-6 mt-4">
                 <div class="member d-flex align-items-start">
-                    <div class="pic"><img src="assets/img/2.jpg" class="img-fluid" alt=""></div>
+                    <div class="pic"><img src="${path1}/resources/assets/img/2.jpg" class="img-fluid" alt=""></div>
                     <div class="member-info">
                         <h4>김어은</h4>
                         <span>Management Planner</span>
@@ -74,7 +74,7 @@
             </div>
             <div class="col-lg-6 mt-4">
                 <div class="member d-flex align-items-start">
-                    <div class="pic"><img src="assets/img/5.jpg" class="img-fluid" alt=""></div>
+                    <div class="pic"><img src="${path1}/resources/assets/img/5.jpg" class="img-fluid" alt=""></div>
                     <div class="member-info">
                         <h4>신수민</h4>
                         <span>Designer, Front-End Developer</span>
