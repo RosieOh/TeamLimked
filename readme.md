@@ -5,6 +5,43 @@
 |              대표 / 백엔드 개발       | 부대표 / 데이터 분석 |   전략 및 경영기획|    경영기획| 디자인 /프론트엔드 |
 | [@RosieOh](https://github.com/rosieoh) |              |                     |            |                  |
 
+## 기술 스택
+
+### 📚 Tech Stack
+#### 💻 Development
+<img src="https://skillicons.dev/icons?i=java,spring,mysql,javascript,jquery& perline="/>
+
+#### ⌛ Developed Period
+##### 2023.11.23 ~ 진행중
+
+
+<br>
+
+### 💡 웹사이트 기능 소개
+> 회원 기능
+- 회원가입 및 로그인, 아이디 찾기, 비밀번호 찾기
+
+> 커뮤니티
+- 공지사항, 자유게시판, FAQ, Q&A, 자료실
+
+> 관리자
+- 회원관리, 공지사항 관리, FAQ관리, 자유게시판관리
+
+> 고객센터
+- 문의사항, 자주 묻는 질문
+
+> 게시판
+- 학생 E-PortFolio, 학생 교수학습자료실, 교사 E-PortFolio, 교사 교수학습자료실
+  <br>
+
+## 배운 점 & 아쉬운 점
+
+<p align="justify">
+
+</p>
+
+<br>
+
 ## 💡 Commit Convention
 
 |       Tags       |               Explanation               |
