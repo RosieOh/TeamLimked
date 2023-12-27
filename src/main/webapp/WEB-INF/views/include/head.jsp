@@ -3,27 +3,27 @@
 <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
 <%@ taglib prefix="fn" uri = "http://java.sun.com/jsp/jstl/functions"%>
 <c:set var="path1" value="${pageContext.servletContext.contextPath }" />
-<%--<script src="${path1}/resources/js/jquery-3.7.1.js"></script>--%>
-<%--<link rel="stylesheet" href="${path1}/resources/css/normalize.css" />--%>
-<!-- Favicon -->
-<link rel="shortcut icon" type="image/x-icon" href="${path1}/resources/images/favicon.ico" />
+<script type="text/javascript" src="https://openapi.map.naver.com/openapi/v3/maps.js?clientId=YOUR_CLIENT_ID"></script>
 
-<!-- bootstrap.min css -->
-<link rel="stylesheet" href="${path1}/resources/plugins/bulma/bulma.min.css">
-<!-- Icon Font Css -->
-<link rel="stylesheet" href="${path1}/resources/plugins/themify/css/themify-icons.css">
-<link rel="stylesheet" href="${path1}/resources/plugins/fontawesome/css/all.css">
-<link rel="stylesheet" href="${path1}/resources/plugins/magnific-popup/dist/magnific-popup.css">
-<link rel="stylesheet" href="${path1}/resources/plugins/modal-video/modal-video.css">
-<link rel="stylesheet" href="${path1}/resources/plugins/animate-css/animate.css">
-<!-- Slick Slider  CSS -->
-<link rel="stylesheet" href="${path1}/resources/plugins/slick-carousel/slick/slick.css">
-<link rel="stylesheet" href="${path1}/resources/plugins/slick-carousel/slick/slick-theme.css">
+<!-- Favicons -->
+<link href="${path1}/resources/assets/img/logo_1.png" rel="icon">
+<link href="${path1}/resources/assets/img/logo_1.png" rel="apple-touch-icon">
 
-<!-- Main Stylesheet -->
-<link rel="stylesheet" href="${path1}/resources/css/style.css">
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
 
-<!-- Essential Scripts =====================================-->
+<!-- Vendor CSS Files -->
+<link href="${path1}/resources/assets/vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+<link href="${path1}/resources/assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+<link href="${path1}/resources/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<link href="${path1}/resources/assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+<link href="${path1}/resources/assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+<link href="${path1}/resources/assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+<link href="${path1}/resources/assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+<link href="${path1}/resources/assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+<!-- Template Main CSS File -->
+<link href="assets/css/style.css" rel="stylesheet">
 
 
 <!-- Main jQuery -->
@@ -44,5 +44,14 @@
 <script type="text/javascript" src="${path1}/resources/ckeditor/ckeditor.js"></script>
 <script src="https://cdn.ckeditor.com/4.20.0/standard/ckeditor.js"></script>
 
-<script src="${path1}/resources/js/script.js"></script>
+
+<!-- Vendor JS Files -->
+<script src="${path1}/resources/assets/vendor/purecounter/purecounter.js"></script>
+<script src="${path1}/resources/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="${path1}/resources/assets/vendor/glightbox/js/glightbox.min.js"></script>
+<script src="${path1}/resources/assets/vendor/swiper/swiper-bundle.min.js"></script>
+<script src="${path1}/resources/assets/vendor/php-email-form/validate.js"></script>
+
+<!-- Template Main JS File -->
+<script src="${path1}/resources/assets/js/main.js"></script>
 

@@ -4,76 +4,34 @@
 <%@ taglib prefix="fn" uri = "http://java.sun.com/jsp/jstl/functions"%>
 <%@ page import="java.util.*, java.lang.*" %>
 <%@ page import="java.text.*, java.net.InetAddress" %>
-<c:set var="path0" value="${pageContext.servletContext.contextPath }" />
+<c:set var="path1" value="${pageContext.servletContext.contextPath }" />
 <!-- 헤더 내용 기술 -->
-<div id="navbar" class="navigation py-4">
-    <div class="container">
-        <nav class="navbar">
-            <div class="navbar-brand">
-                <a class="navbar-item" href="index.html">
-                    <img src="images/logo.png" alt="logo">
-                </a>
-                <button role="button" class="navbar-burger burger" data-hidden="true" data-target="navigation">
-                    <span aria-hidden="true"></span>
-                    <span aria-hidden="true"></span>
-                    <span aria-hidden="true"></span>
-                </button>
-            </div>
-
-            <div class="navbar-menu" id="navigation" style="padding-left: 100px;">
-                <ul class="navbar-start ml-auto">
-                    <li class="navbar-item">
-                        <a class="navbar-link" href="index.html">Home</a>
-                    </li>
-
-                    <li class="navbar-item">
-                        <a class="navbar-link" href="about.html">About</a>
-                    </li>
-
-                    <li class="navbar-item">
-                        <a class="navbar-link" href="project.html">Portfolio</a>
-                    </li>
-
-                    <li class="navbar-item has-dropdown">
-                        <a class="navbar-link">Pages</a>
-                        <div class="navbar-dropdown">
-                            <a class="navbar-item" href="service.html">Service</a>
-                            <a class="navbar-item" href="pricing.html">Pricing</a>
-                            <a class="navbar-item" href="blog-sidebar.html">Blog with sidebar</a>
-                            <a class="navbar-item" href="blog-single.html">Blog Single</a>
-                        </div>
-                    </li>
-
-                    <li class="navbar-item">
-                        <a class="navbar-link" href="${path0}/contact.do">Contact</a>
-                    </li>
-                </ul>
-            </div>
-                <div class="navbar-item">
-                    <div class="buttons">
-                        <c:if test="${!empty sid}">
-                            <a href="${path1}/member/mypage.do" class="button is-primary">
-                                <strong>MyPage</strong>
-                            </a>
-                            <a href="${path1}/member/logout.do" class="button is-light">
-                                LogOut
-                            </a>
-                        </c:if>
-                        <c:if test="${empty sid}">
-                            <a href="${path1}/member/term.do" class="button is-primary">
-                                <strong>Sign up</strong>
-                            </a>
-                            <a href="${path1}/member/login.do" class="button is-light">
-                                Log in
-                            </a>
-                        </c:if>
-                        <c:if test="${sid.equals('admin')}">
-                            <a href="${path1}/member/list.do" class="button is-light">
-                                MemberList
-                            </a>
-                        </c:if>
-                    </div>
-                </div>
+<header id="header" class="fixed-top">
+    <div class="container d-flex align-items-center">
+        <h1 class="logo me-auto"><a href="index.html">MediRing</a></h1>
+        <nav id="navbar" class="navbar order-last order-lg-0">
+            <ul>
+                <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
+                <li><a class="nav-link scrollto" href="#about">About</a></li>
+                <li><a class="nav-link scrollto" href="#services">Services</a></li>
+                <li><a class="nav-link scrollto" href="#departments">Departments</a></li>
+                <li><a class="nav-link scrollto" href="#doctors">OurTeams</a></li>
+                <li class="dropdown"><a href="#"><span>Ecommerce</span> <i class="bi bi-chevron-down"></i></a>
+                    <ul>
+                        <li><a href="#">물건 구매하기</a></li>
+                        <li class="dropdown"><a href="#"><span>구매 정보</span> <i class="bi bi-chevron-right"></i></a>
+                            <ul>
+                                <li><a href="#">구매페이지</a></li>
+                                <li><a href="#">구매내역</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+            </ul>
+            <i class="bi bi-list mobile-nav-toggle"></i>
         </nav>
+        <!-- .navbar -->
+        <a href="#appointment" class="appointment-btn scrollto"><span class="d-none d-md-inline">Diagnosing</span> My body</a>
     </div>
-</div>
+</header>
